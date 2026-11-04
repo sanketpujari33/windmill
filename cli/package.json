@@ -7,8 +7,8 @@
   },
   "scripts": {
     "preinstall": "node ./prepare-yaml-validator.mjs",
-    "dev": "bun run src/main.ts",
-    "build": "./build.sh",
+    "dev": "node init && bun run src/main.ts",
+    "build": "node init && ./build.sh",
     "gen:dev-recorder": "bun run generate-dev-recorder.ts",
     "gen:app-policy": "bun run generate-app-policy.ts",
     "gen:ai-review": "bun run generate-ai-review.ts",

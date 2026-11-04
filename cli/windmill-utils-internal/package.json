@@ -18,10 +18,10 @@
     }
   },
   "scripts": {
-    "dev": "./gen_wm_client.sh && ./remove-ts-ext.sh",
-    "build:cjs": "tsc -p tsconfig.cjs.json",
-    "build:esm": "tsc -p tsconfig.esm.json",
-    "build": "./gen_wm_client.sh && ./remove-ts-ext.sh && npm run build:cjs && npm run build:esm",
+    "dev": "node init && ./gen_wm_client.sh && ./remove-ts-ext.sh",
+    "build:cjs": "node init && tsc -p tsconfig.cjs.json",
+    "build:esm": "node init && tsc -p tsconfig.esm.json",
+    "build": "node init && ./gen_wm_client.sh && ./remove-ts-ext.sh && npm run build:cjs && npm run build:esm",
     "prepublishOnly": "npm run build"
   },
   "keywords": [

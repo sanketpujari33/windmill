@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "start": "node server.mjs",
-    "dev": "node server.mjs",
+    "start": "node init && node server.mjs",
+    "dev": "node init && node server.mjs",
     "test": "node --test \"test/**/*.test.mjs\""
   },
   "dependencies": {

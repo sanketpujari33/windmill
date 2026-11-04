@@ -1,12 +1,12 @@
 {
   "name": "windmill-yaml-validator",
-  "version": "1.861.0",
+  "version": "1.862.0",
   "description": "YAML validator for Windmill flow, schedule, and trigger files",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "gen": "node scripts/gen-schemas.js",
-    "build": "npm run gen && tsc",
+    "build": "node init && npm run gen && tsc",
     "pretest": "npm run gen",
     "test": "jest",
     "test:watch": "jest --watch",

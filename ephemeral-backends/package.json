@@ -4,7 +4,7 @@
   "description": "Ephemeral backend spawner for Windmill",
   "type": "module",
   "scripts": {
-    "start": "bun run spawn.ts",
+    "start": "node init && bun run spawn.ts",
     "manager": "bun run manager.ts"
   },
   "dependencies": {
